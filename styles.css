@@ -49,6 +49,16 @@ header {
   margin-bottom: 10px;
 }
 
+.btn {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 .section {
   padding: 50px 20px;
 }
@@ -69,19 +79,34 @@ ul.grid {
   list-style: none;
 }
 
-ul.clients {
-  list-style: disc;
-  padding-left: 20px;
+ul.certs li {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-left: 4px solid #004080;
 }
 
-a.whatsapp {
-  display: inline-block;
-  margin-top: 15px;
-  background-color: #25d366;
-  color: white;
-  padding: 10px 20px;
+.contact-form {
+  display: grid;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  text-decoration: none;
+}
+
+.contact-form button {
+  background-color: #004080;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
