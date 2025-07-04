@@ -4,88 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yobran Investment Limited</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-    }
-
-    header {
-      background-color: #004b8d;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-    }
-
-    section {
-      padding: 1rem;
-    }
-
-    h1, h2, h3 {
-      color: #004b8d;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .services, .certifications, .contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .service, .cert, .contact-info {
-      flex: 1 1 45%;
-      background-color: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    .contact-info p {
-      margin: 0.5rem 0;
-    }
-
-    a.button {
-      display: inline-block;
-      background-color: #004b8d;
-      color: white;
-      padding: 0.75rem 1.25rem;
-      text-decoration: none;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    @media (max-width: 768px) {
-      .service, .cert, .contact-info {
-        flex: 1 1 100%;
-      }
-
-      header {
-        font-size: 1.2rem;
-        padding: 1rem;
-      }
-
-      section {
-        padding: 1rem 0.75rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header>
-    <h1>Yobran Investment Limited</h1>
-    <p>Your reliable partner in goods and services supply</p>
+    <div class="header-content">
+      <img src="yobran-logo.png" alt="Yobran Logo" class="logo" />
+      <div class="company-name">
+        <h1>Yobran Investment Limited</h1>
+        <p>Your reliable partner in goods and services supply</p>
+      </div>
+    </div>
   </header>
 
   <section class="container">
@@ -149,18 +79,27 @@
     <a href="Yobran-Company-Profile.pdf" class="button" download>Download Profile</a>
   </section>
 
-  <section class="container contact">
+  <section class="container">
     <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/info@yobranltd.co.ke" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit" class="button">Send Message</button>
+    </form>
+
     <div class="contact-info">
-      <p><strong>Contact Name:</strong> Anne Mwangi</p>
-      <p><strong>Phone:</strong> 0725 233 230</p>
-    </div>
-    <div class="contact-info">
-      <p><strong>Contact Name:</strong> Brian Nguru</p>
-      <p><strong>Phone:</strong> 0702 472 886</p>
-    </div>
-    <div class="contact-info">
-      <p><strong>Email:</strong> <em>info@yobranltd.co.ke</em> (placeholder)</p>
+      <p><strong>Contact Name:</strong> Anne Mwangi – 0725 233 230</p>
+      <p><strong>Contact Name:</strong> Brian Nguru – 0702 472 886</p>
+      <p><strong>Email:</strong> info@yobranltd.co.ke</p>
       <p><strong>Location:</strong> Nairobi, Kenya</p>
     </div>
   </section>
