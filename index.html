@@ -2,84 +2,168 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yobran Investment Ltd</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yobran Investment Limited</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      background-color: #004b8d;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    section {
+      padding: 1rem;
+    }
+
+    h1, h2, h3 {
+      color: #004b8d;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services, .certifications, .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .service, .cert, .contact-info {
+      flex: 1 1 45%;
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: #004b8d;
+      color: white;
+      padding: 0.75rem 1.25rem;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .service, .cert, .contact-info {
+        flex: 1 1 100%;
+      }
+
+      header {
+        font-size: 1.2rem;
+        padding: 1rem;
+      }
+
+      section {
+        padding: 1rem 0.75rem;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <div class="container header-flex">
-      <img src="yobran-logo.png" alt="Yobran Logo" class="logo" />
-      <div class="branding">
-        <h1>Yobran Investment Ltd</h1>
-        <p>IFMIS No: 858184</p>
-      </div>
-    </div>
+    <h1>Yobran Investment Limited</h1>
+    <p>Your reliable partner in goods and services supply</p>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Reliable Supply & Logistics Partner</h2>
-      <p>Serving Government Ministries, Corporates & Institutions in Kenya</p>
-      <a href="Yobran_Company_Profile.pdf" class="btn" download>📄 Download Company Profile</a>
+  <section class="container">
+    <h2>About Us</h2>
+    <p>
+      Yobran Investment Limited is a Kenyan registered company committed to delivering high-quality goods and services to both public and private sector clients. We pride ourselves on reliability, professionalism, and a future-focused mindset that ensures we evolve with the changing needs of our partners. With diverse capabilities across sectors, we’re positioned to handle supply contracts of varying sizes and complexities — from everyday office and cleaning supplies to specialized equipment, consultancy support, and logistics coordination.
+    </p>
+  </section>
+
+  <section class="container">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>General Supplies</h3>
+        <p>Office stationery, electronics, furniture, consumables, and cleaning products for corporate and government institutions.</p>
+      </div>
+      <div class="service">
+        <h3>Construction Materials</h3>
+        <p>Supply of building and hardware materials, safety gear, and tools for construction sites and development projects.</p>
+      </div>
+      <div class="service">
+        <h3>Consultancy & Training</h3>
+        <p>Professional services including capacity-building workshops, ICT training, business development, and logistics management.</p>
+      </div>
+      <div class="service">
+        <h3>ICT and Electronics</h3>
+        <p>Supply of computers, networking equipment, software, accessories, and basic IT support for installation and setup.</p>
+      </div>
+      <div class="service">
+        <h3>Printing and Branding</h3>
+        <p>Custom branding, printing of promotional material, signage, corporate wear, and embroidery services.</p>
+      </div>
+      <div class="service">
+        <h3>Event Supplies & Support</h3>
+        <p>Tents, chairs, décor, public address systems, and logistical support for events, conferences, and outdoor activations.</p>
+      </div>
     </div>
   </section>
 
-  <section class="about section">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Yobran Investment Ltd is a Kenyan-based supply and logistics company specializing in the delivery of goods and services to both public and private sector clients. Our company is duly registered and operates in full compliance with government procurement standards, IFMIS protocols, and AGPO guidelines.</p>
-      <p>We take pride in being a woman-owned, AGPO-certified business that champions reliability, diversity, and excellence. With our extensive supplier network and experienced operations team, we’re equipped to meet a wide range of needs — from everyday office supplies to highly specialized technical, ICT, safety, and construction equipment.</p>
-      <p>Our approach is built on trust, transparency, and timeliness. Whether you're a government agency, a county department, a state corporation, or a development partner, Yobran Investment Ltd is ready to deliver solutions that exceed expectations. We welcome partnerships and look forward to growing with you.</p>
+  <section class="container">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <div class="cert">
+        <strong>KRA PIN:</strong>
+        <p>P051713899Y</p>
+      </div>
+      <div class="cert">
+        <strong>AGPO Certificate:</strong>
+        <p>NT/PPD/2023/DGW/14785 (Women Category)</p>
+      </div>
+      <div class="cert">
+        <strong>IFMIS Supplier No:</strong>
+        <p>858184</p>
+      </div>
     </div>
   </section>
 
-  <section class="services section alt">
-    <div class="container">
-      <h2>Our Services</h2>
-      <ul class="grid">
-        <li><strong>Office Supplies:</strong> Stationery, printing materials, office furniture</li>
-        <li><strong>ICT & Electronics:</strong> Computers, networking equipment, printers, UPS systems</li>
-        <li><strong>Medical & Safety Equipment:</strong> PPE, first aid kits, cleaning & hygiene products</li>
-        <li><strong>Construction Tools & Materials:</strong> Paints, hand tools, hardware supplies</li>
-        <li><strong>Hospitality & Catering Supplies:</strong> Kitchenware, appliances, serving equipment</li>
-        <li><strong>Custom Procurement:</strong> Sourcing tailored goods and services based on client needs</li>
-      </ul>
+  <section class="container">
+    <h2>Company Profile</h2>
+    <p>Download our latest company profile PDF below:</p>
+    <a href="Yobran-Company-Profile.pdf" class="button" download>Download Profile</a>
+  </section>
+
+  <section class="container contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Contact Name:</strong> Anne Mwangi</p>
+      <p><strong>Phone:</strong> 0725 233 230</p>
+    </div>
+    <div class="contact-info">
+      <p><strong>Contact Name:</strong> Brian Nguru</p>
+      <p><strong>Phone:</strong> 0702 472 886</p>
+    </div>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <em>info@yobranltd.co.ke</em> (placeholder)</p>
+      <p><strong>Location:</strong> Nairobi, Kenya</p>
     </div>
   </section>
 
-  <section class="certifications section">
-    <div class="container">
-      <h2>Certifications</h2>
-      <ul class="grid certs">
-        <li><strong>IFMIS No:</strong> 858184</li>
-        <li><strong>KRA PIN:</strong> P051713899Y</li>
-        <li><strong>AGPO:</strong> Registered – Women</li>
-        <li><strong>AGPO Cert No:</strong> NT/PPD/2023/DGW/14785</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contact section alt">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p><strong>Anne Mwangi</strong> – 0725 233 230</p>
-      <p><strong>Brian Nguru</strong> – 0702 472 886</p>
-      <p><strong>Email:</strong> info@yobranltd.co.ke</p>
-
-      <form action="https://formsubmit.co/your@email.com" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Yobran Investment Ltd. All rights reserved.</p>
-    </div>
-  </footer>
 </body>
 </html>
