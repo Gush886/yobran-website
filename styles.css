@@ -75,6 +75,23 @@ ul {
   padding-left: 20px;
 }
 
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #002c5f;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #004080;
+}
+
 /* Footer */
 footer {
   background-color: #002c5f;
